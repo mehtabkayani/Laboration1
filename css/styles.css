@@ -1,0 +1,216 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+margin: 0px;
+
+}
+header{
+  height: 100px;
+  background-color: #005792;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+/* Header*/
+
+.logo-name{
+  margin:0px;
+  padding-top: 25px;
+}
+
+/* Meny*/
+.meny{
+  height: 50px;
+  background-color: #448ef6;
+}
+
+.navbar{
+  text-align: right;
+  padding: 15px;
+
+}
+
+/*Main*/
+
+main{
+  display: flex;
+ flex-direction: row;
+  height: 400px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+  background-color: #000;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+.image{
+
+  flex-direction: row;
+  align-self: center;
+  height: 50px;
+  width: 60px;
+}
+
+.produkt-namn{
+align-self: center;
+
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+
+/*Aside*/
+aside{
+  float:right;
+  width: 25%;
+  background-color: #ffce76;
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 0px;
+  background-color: pink;
+}
+
+.item-aside{
+
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+.aside-pic{
+  height: 50px;
+  width: 50px;
+}
+
+
+/*Footer*/
+footer{
+  background-color: #00204a;
+  height: 200px;
+}
+
+.copyright{
+color:white;
+text-align: center;
+margin-top: 0px;
+padding-top: 157px;
+
+}
+
+/*Media Queries*/
+@media screen and (max-width:500px){
+  main{
+  flex-direction: column-reverse;
+  }
+  .grid-container{
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+
+  .container{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0px;
+    height: 75%;
+  }
+
+  .item{
+    width: 100%;
+    text-align:  center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32%;
+  }
+
+  .item-aside{
+    width: auto;
+  }
+
+  .navbar{
+    float: left;
+    padding: 15px;
+
+  }
+
+  .logo-name{
+    float:right;
+  }
+
+  footer{
+    width: 100%
+  }
+
+}
+
+/* Kontaktsidan*/
+
+.kontakt-body{
+  background-color: #dadddf;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.kontakt-grid-box{
+display: grid;
+grid-template-columns: auto auto;
+height: 250px;
+width: 500px;
+
+}
+
+.kontakt-namn{
+  height: 250px;
+  width: 200px;
+}
+
+.kontakt-pic{
+  height: 250px;
+  width: 200px;
+  border-radius: 100%;
+
+}
+
+.skills{
+  display: grid;
+  height: 250px;
+  width: 300px;
+  background-color: #dadddf;
+
+}
+
+.skill-item-1{
+  margin-left: 5px;
+}
+
+.skill-item-2{
+  align-self: flex-end;
+  margin-left: 5px;
+
+}
